@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         String maxid = System.currentTimeMillis()+"" ;
         ref = FirebaseDatabase.getInstance("https://android-data-3da67-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("User");
 
-       //button 1
+       //button 1 SEND DATA AND TEST
         btn.setOnClickListener(view -> {
 
             ref.child(maxid).setValue(member);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        //button 2
+        //button 2 change screen onclick
         btn2.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,Alldata.class);
             startActivity(intent);
