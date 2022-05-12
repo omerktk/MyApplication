@@ -18,6 +18,15 @@ public class Student {
     }
 
 
+    public String getStdname() {
+        return stdname;
+    }
 
+    public String getCourse() {
+        return course;
+    }
 
+    public String getGrade() {
+        return grade;
+    }
 }

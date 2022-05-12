@@ -10,69 +10,49 @@
 
     >
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="53dp" />
 
-    <EditText
-        android:id="@+id/et_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="53dp" />
 
-    <EditText
-        android:id="@+id/et_mail"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email" />
+        android:text="TextView" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="53dp" />
 
-    <EditText
-        android:id="@+id/et_pass"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Pass" />
+        android:text="TextView" />
+
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="53dp" />
 
-    <Button
-        android:id="@+id/button1"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send" />
+        android:text="TextView" />
+
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="53dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Check Database" />
+        android:text="Button" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="53dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Refresh" />
 </LinearLayout>

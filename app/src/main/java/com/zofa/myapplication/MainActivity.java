@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     EditText name,mail,pass;
 
 
-    Button btn,btn2;
+    Button btn,btn2,btn3;
 
 
     @Override
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         pass = findViewById(R.id.et_pass);
         btn = findViewById(R.id.button1);
         btn2 = findViewById(R.id.button2);
+        btn3 = findViewById(R.id.button3);
 
         Student member = new Student(name.getText().toString(),mail.getText().toString(),pass.getText().toString());
         String maxid = System.currentTimeMillis()+"" ;
@@ -48,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
         //button 2 change screen onclick
         btn2.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,Alldata.class);
+            startActivity(intent);
+        });
+
+        //button 2 change screen onclick
+        btn3.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,MainActivity.class);
             startActivity(intent);
         });
 
