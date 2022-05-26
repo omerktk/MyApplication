@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.button2);
         btn3 = findViewById(R.id.button3);
 
-        Student member = new Student(name.getText().toString(),mail.getText().toString(),pass.getText().toString());
+
         String maxid = System.currentTimeMillis()+"" ;
         ref = FirebaseDatabase.getInstance("https://android-data-3da67-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("User");
 
        //button 1 SEND DATA AND TEST
         btn.setOnClickListener(view -> {
-
+            Student member = new Student(name.getText().toString(),mail.getText().toString(),pass.getText().toString());
             ref.child(maxid).setValue(member);
             Toast.makeText(MainActivity.this,"inserted",Toast.LENGTH_LONG).show();
 
